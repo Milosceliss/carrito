@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;   
+}
+.padre{
+    background: url('../multimedia/fondo.png');
+    width: 100%;
+    height: 50rem;
+    background-size: cover;
+   
+}
+
+.padrecito{
+    animation: city 1s infinite linear;
+}
+
+
+@keyframes city{
+    100%{
+    background-position-x: -1920px;
+}
+}
+
+.luces{
+    position: absolute;
+    left: 63rem;
+    top: 33rem; 
+}
+
+.luces_mover{
+    animation: luz 5s infinite linear;
+}
+
+
+
+@keyframes luz{
+    100%{
+        opacity: 0.1;
+    }
+}
+
+
+.carro{
+    position: absolute;
+    top: 29rem;
+    left: 16rem;
+}
+
+
+.llantas{
+    position: absolute;
+    left: 23rem;
+    top: 37.8rem;
+}
+ .llantas_uno{
+    animation: rueda 5s infinite linear;
+ }
+
+@keyframes rueda{
+    100%{
+    transform: rotate(10000deg); 
+    }
+}
+
+.llantas2{
+    position: absolute;
+    left: 53.6rem;
+    top: 37.8rem;
+}
+
+.llantas_dos{
+    animation: rueda 5s infinite linear;
+}
+
+@keyframes rueda{
+    100%{
+    transform: rotate(10000deg); 
+    }
+}
+.humo{
+    position: absolute;
+    right: 63rem;
+    top: 34rem;
+    background: url('../multimedia/sprikes.png');
+    height: 196px;
+    width: 392px;
+    z-index: 1;
+}
+
+.humito{
+    animation: polvo 0.5s infinite steps(5);
+}
+
+
+@keyframes polvo{
+    100%{
+        background-position-x:1876px;
+    }
+}
+.oculto{
+    display: none;
+}
